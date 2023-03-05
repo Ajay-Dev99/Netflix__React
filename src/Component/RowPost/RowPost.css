@@ -25,4 +25,21 @@
     margin-right: 10px;
     border-radius: 4px;
 }
+ .poster:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+ }
 
+ .small_poster:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+ }
+ .close{
+    padding: 5px;
+ }
+ .close_button{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+ }
+ 

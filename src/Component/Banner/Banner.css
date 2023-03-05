@@ -25,39 +25,23 @@
     max-width: 500px;
     padding-bottom: 2rem;
 }
-
-.play_button{
-    background-color: white;
-    color:black;
+.button{
+    color: white;
+    outline: none;
     border: none;
-    border-radius: 5px;
     font-weight: 700;
+    border-radius: 5px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-size: large;
+    background-color: rgba(51, 51,51,.5);
     cursor: pointer;
     margin-right: 1rem;
 }
-
-.moreinfo_button{
-    background-color: rgba(100, 98, 98, 0.9);
-    color:white;
-    border: none;
-    border-radius: 5px;
-    font-weight: 700;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: large;
-    cursor:pointer;
-    margin-right: 1rem;
-}
-
-.play_button:hover{
-    background-color: rgb(156, 155, 155);
+.button:hover{
+    color: black;
+    background-color: #e6e6e6;
 }
 
 .moreinfo_button:hover{

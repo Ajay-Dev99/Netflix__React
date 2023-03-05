@@ -9,11 +9,10 @@ function RowPost(props) {
   const [urlId, setUrlId] = useState("");
   useEffect(() => {
     axios.get(props.url).then((response) => {
-      console.log(response.data);
       setMovie(response.data.results);
     });
   }, []);
-  const opts: YouTubeProps["opts"] = {
+  const opts= {
     height: "390",
     width: "100%",
     playerVars: {
@@ -35,7 +34,7 @@ function RowPost(props) {
       <h2>{props.title}</h2>
       <div className="posters">
         {movie.map((obj) => (
-          <img
+          <img key={obj.id}
             onClick={() => {
               handleMovie(obj.id);
             }}
@@ -45,8 +44,9 @@ function RowPost(props) {
           />
         ))}
       </div>
-
+      <div className="close_button"> { urlId ?  <i onClick={() => setUrlId(null)} className="fas fa-times"></i> :''} </div>
       {urlId && <YouTube opts={opts} videoId={urlId.key} />}
+    
     </div>
   );
 }

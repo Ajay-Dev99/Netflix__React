@@ -4,19 +4,20 @@
     padding: 20px;
     width: 100%;
     height:30px;
-    background-color:#111;
+     background-color: rgba(17, 17, 17, 0.5);
     display: flex;
     justify-content: space-between;
 }
 
 .logo{
-    position: fixed;
-    left:60px;
-    width:95px;
+    /* position: fixed; */
+    padding-left: 10px;
+    left: 20px;
+    width: 80px;
 }
-
 .avatar{
-    position: fixed;
-    right:80px;
-    width:36px;
+    /* position: fixed; */
+    padding-right:40px ;
+    right: 20px;
+    width: 30px;
 }
